@@ -7,13 +7,13 @@
 
     service.initialize().done(function () {
         console.log("Service initialized");
-        /*router.addRoute('', function() {
+        router.addRoute('', function() {
             slider.slidePage(new HomeView(service).render().$el);
         });
-        router.start();*/
+        router.start();
     });
 
-    //HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
+    HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
 
 /*document.addEventListener('onSMSArrive', function(e){
                 var sms = e.data;

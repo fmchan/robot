@@ -12,17 +12,11 @@ var HomeView = function (service) {
 	};
 
 	this.requestTest = function() {
-	    $.ajax({url: "http://playhard.timture.com:4567/Hello", success: function(result) {
-	    	result = $.parseJSON(result);
-        	console.log("title:" + result.title);
+	    $.ajax({url: "/robot/test.php", success: function(result) {
+	    	//result = $.parseJSON(result);
+        	//console.log("title:" + result.title);
+            console.log(result);
     	}});
-
-		if(SMS) SMS.startWatch(function() {
-                update('watching', 'watching started');
-            }, function() {
-                updateStatus('failed to start watching');
-            });
-
 	};
 
 	this.initialize();

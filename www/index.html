@@ -10,7 +10,7 @@
   	<link href="assets/css/pageslider.css" rel="stylesheet">
   	<link href="assets/css/styles.css" rel="stylesheet">
 </head>
-<body onload="sms();">
+<body>
 
 	<script id="home-tpl" type="text/template">
 	  <header class="bar bar-nav">
@@ -19,18 +19,6 @@
 	  <p><button class="bar help-btn">Help</button></p>
 	  <div class="content"></div>
 	</script>
-<div id="arrive-sms"></div>
-
-<script type="text/javascript">
-function sms() {
-    var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
-
-smsplugin.startReception(
-  function(msg) { alert(msg); $('#arrive-sms').text(msg); },
-  function(error) { alert("Error while receiving messages: " + error); $('#arrive-sms').text(error); }
-);
-}
-</script>
 
 	<script src="lib/jquery.js"></script>
 	<script src="lib/pageslider.js"></script>
