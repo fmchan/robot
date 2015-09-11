@@ -35,6 +35,10 @@
                         {
                             "xml": "<feature name=\"Sms\"><param name=\"ios-package\" value=\"Sms\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -80,6 +84,9 @@
             "PACKAGE_NAME": "com.fmchan.robot"
         },
         "info.asankan.phonegap.smsplugin": {
+            "PACKAGE_NAME": "com.fmchan.robot"
+        },
+        "phonegap-plugin-push": {
             "PACKAGE_NAME": "com.fmchan.robot"
         }
     },

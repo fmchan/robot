@@ -35,6 +35,10 @@
                         {
                             "xml": "<feature name=\"SmsPlugin\"><param name=\"android-package\" value=\"info.asankan.phonegap.smsplugin.SmsPlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PushNotification\"><param name=\"android-package\" value=\"com.adobe.phonegap.push.PushPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -52,6 +56,30 @@
                         },
                         {
                             "xml": "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<permission android:name=\"com.fmchan.robot.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.fmchan.robot.permission.C2D_MESSAGE\" />",
                             "count": 1
                         }
                     ],
@@ -88,6 +116,20 @@
                             "xml": "<uses-permission android:name=\"android.permission.SEND_SMS\" />",
                             "count": 2
                         }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:exported=\"true\" android:name=\"com.adobe.phonegap.push.PushHandlerActivity\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.adobe.phonegap.push.CordovaGCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.fmchan.robot\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.adobe.phonegap.push.GCMIntentService\" />",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -116,6 +158,9 @@
             "PACKAGE_NAME": "com.fmchan.robot"
         },
         "info.asankan.phonegap.smsplugin": {
+            "PACKAGE_NAME": "com.fmchan.robot"
+        },
+        "phonegap-plugin-push": {
             "PACKAGE_NAME": "com.fmchan.robot"
         }
     },

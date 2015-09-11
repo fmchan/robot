@@ -37,6 +37,41 @@
 
       FastClick.attach(document.body);
 
+        var push = PushNotification.init({
+            "android": {
+                "senderID": "741175631277"
+            },
+            "ios": {}, 
+            "windows": {} 
+        });
+        
+        push.on('registration', function(data) {
+            console.log("registration event");
+            document.getElementById("regId").innerHTML = data.registrationId;
+            console.log(JSON.stringify(data));
+        });
+
+        push.on('notification', function(data) {
+          console.log("notification event");
+            console.log(JSON.stringify(data));
+            var cards = document.getElementById("cards");
+            var push = '<div class="row">' +
+            '<div class="col s12 m6">' +
+          '  <div class="card darken-1">' +
+          '    <div class="card-content black-text">' +
+          '      <span class="card-title black-text">' + data.title + '</span>' +
+          '      <p>' + data.message + '</p>' +
+          '    </div>' +
+          '  </div>' +
+          ' </div>' +
+          '</div>';
+            cards.innerHTML += push;
+        });
+
+        push.on('error', function(e) {
+            console.log("push error");
+        });
+
       if (navigator.notification) { // Override default HTML alert with native dialog
           window.alert = function (message) {
               navigator.notification.alert(

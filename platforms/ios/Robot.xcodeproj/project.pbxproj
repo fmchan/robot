@@ -47,6 +47,8 @@
 		277CA5546EDE4729A35DA790 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D1A3A878B24C89ABE77ADC /* CDVStatusBar.m */; };
 		CE837774EFA24E5C80038164 /* Sms.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C630EEB66D4F7F8246D0AC /* Sms.m */; };
 		F27F403170E14BD292B82A99 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B294DA3BDA9412E9DD70352 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		63DFDD9E55BA4710A96D2A05 /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 654A4143D0094EA4937FC402 /* AppDelegate+notification.m */; };
+		CF3981262EC944CEB4E1190C /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D349B845F1473BB3C12D61 /* PushPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,10 @@
 		F8C630EEB66D4F7F8246D0AC /* Sms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Sms.m"; path = "com.cordova.plugins.sms/Sms.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		9067C765F0A54CAC8E970390 /* Sms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Sms.h"; path = "com.cordova.plugins.sms/Sms.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		8B294DA3BDA9412E9DD70352 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		654A4143D0094EA4937FC402 /* AppDelegate+notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+notification.m"; path = "phonegap-plugin-push/AppDelegate+notification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D2D349B845F1473BB3C12D61 /* PushPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PushPlugin.m"; path = "phonegap-plugin-push/PushPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		C5ED4404920C418B9A09C9A8 /* AppDelegate+notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+notification.h"; path = "phonegap-plugin-push/AppDelegate+notification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		1D25E416622E4794A90F5611 /* PushPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PushPlugin.h"; path = "phonegap-plugin-push/PushPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +244,10 @@
 				C11C8DDFCFF54C68A6C2C663 /* CDVStatusBar.h */,
 				F8C630EEB66D4F7F8246D0AC /* Sms.m */,
 				9067C765F0A54CAC8E970390 /* Sms.h */,
+				654A4143D0094EA4937FC402 /* AppDelegate+notification.m */,
+				D2D349B845F1473BB3C12D61 /* PushPlugin.m */,
+				C5ED4404920C418B9A09C9A8 /* AppDelegate+notification.h */,
+				1D25E416622E4794A90F5611 /* PushPlugin.h */,
 			);
 			name = Plugins;
 			path = "Robot/Plugins";
@@ -428,6 +438,8 @@
 				D84E9558ACDF4F3CAE1EA078 /* CDVNotification.m in Sources */,
 				277CA5546EDE4729A35DA790 /* CDVStatusBar.m in Sources */,
 				CE837774EFA24E5C80038164 /* Sms.m in Sources */,
+				63DFDD9E55BA4710A96D2A05 /* AppDelegate+notification.m in Sources */,
+				CF3981262EC944CEB4E1190C /* PushPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

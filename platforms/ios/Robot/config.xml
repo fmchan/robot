@@ -49,4 +49,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
 </widget>

@@ -55,6 +55,13 @@ module.exports = [
         "clobbers": [
             "smsplugin"
         ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-push/www/push.js",
+        "id": "phonegap-plugin-push.PushNotification",
+        "clobbers": [
+            "PushNotification"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -67,7 +74,8 @@ module.exports.metadata =
     "org.apache.cordova.statusbar": "0.1.10",
     "com.rjfun.cordova.sms": "1.0.3",
     "com.cordova.plugins.sms": "0.1.4",
-    "info.asankan.phonegap.smsplugin": "0.2.0"
+    "info.asankan.phonegap.smsplugin": "0.2.0",
+    "phonegap-plugin-push": "1.2.3"
 }
 // BOTTOM OF METADATA
 });
