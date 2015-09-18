@@ -1,0 +1,16 @@
+changed length:4
+boring
+boring
+boring
+boring
+boring
+boring
+2015-09-18 09:32:40 changed length:4
+2015-09-18 17:34:12 changed length:4
+2015-09-18 17:44:29 changed length:403379
+2015-09-18 17:45:25 changed length:403277
+Connected to APNS
+Message successfully delivered
+2015-09-18 17:46:34 changed length:403285
+Connected to APNS
+Message successfully delivered

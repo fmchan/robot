@@ -1,18 +1,18 @@
 <?php
 
 // Put your device token here (without spaces):
-$deviceToken = '0f744707bebcf74f9b7c25d48e3358945f6aa01da5ddb387462c7eaf61bbad78';
+$deviceToken = '39c23c8bd8dfa0970fb79ed89202cf9fe290fddc2c522ac24512034d16e7b7bb';
 
 // Put your private key's passphrase here:
-$passphrase = 'pushchat';
+$passphrase = '123456';
 
 // Put your alert message here:
-$message = 'My first push notification!';
+$message = urldecode($_REQUEST['message']);
 
 ////////////////////////////////////////////////////////////////////////////////
 
 $ctx = stream_context_create();
-stream_context_set_option($ctx, 'ssl', 'local_cert', 'ck.pem');
+stream_context_set_option($ctx, 'ssl', 'local_cert', 'final.pem');
 stream_context_set_option($ctx, 'ssl', 'passphrase', $passphrase);
 
 // Open a connection to the APNS server
